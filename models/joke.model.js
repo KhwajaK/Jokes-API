@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 const JokeSchema = new mongoose.Schema({
     setup: {
@@ -15,4 +15,4 @@ const JokeSchema = new mongoose.Schema({
     }
 }, {timestamps: true});
 
-module.exports = mongoose.model('Joke', JokeSchema)
+module.exports = mongoose.model('Joke', JokeSchema);

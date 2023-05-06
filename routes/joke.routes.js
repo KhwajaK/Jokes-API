@@ -1,4 +1,4 @@
-const JokeController = require('../controllers/joke.controllers')
+const JokeController = require('../controllers/joke.controllers');
 
 module.exports = app => {
     app.get('/api/jokes', JokeController.getAllJokes);
@@ -7,4 +7,4 @@ module.exports = app => {
     app.get('/api/jokes/:id', JokeController.getOneJoke);
     app.delete('/api/jokes/:id', JokeController.deleteJoke);
     app.put('/api/jokes/:id', JokeController.updateJoke)
-}
+};

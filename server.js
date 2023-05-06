@@ -3,7 +3,7 @@ const app = express();
 const port = 8000;
 
 require('./config/mongoose.config');
-app.use(express.json(), express.urlencoded({}))
+app.use(express.json(), express.urlencoded({}));
 
 const AllMyRoutes = require("./routes/joke.routes");
 AllMyRoutes(app);
